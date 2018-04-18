@@ -1,4 +1,5 @@
 <div class="container">
+
     <!-- Page Heading/Breadcrumbs -->
     <div class="row">
         <div class="col-lg-12">
@@ -8,59 +9,56 @@
             <ol class="breadcrumb">
                 <li><a routerLink="" routerLinkActive="active">Inicio</a>
                 </li>
-                <li class="active">Visión, misión y valores.</li>
+                <li class="active">Visión, misión y valores</li>
             </ol>
         </div>
     </div>
-    <!-- /.row -->
+    <!-- /.Page Heading/Breadcrumbs -->
     
     <!-- Vision -->
-    <div class="row">
+    <div class="row" *ngFor="let vision of vision">
         <div class="col-md-6">
             <a routerLink="/proyecto-industrial" routerLinkActive="active">
-                <img class="img-responsive img-hover" src="assets/images/industria_1.png" alt="">
+                <img class="img-responsive img-hover" src="{{ vision.img }}" alt="">
             </a>
         </div>
         <div class="col-md-6">
-            <h3>Visión</h3>
-            <h4>Hacia donde vamos como empresa.</h4>
-            <p style="font-family: 'OpenSansItalic'; font-size: 18px;">""Convertirnos en una industria con mayor capacidad productiva y mayor participación en el mercado para finales del 2017."</p>
-            <p>Le invitamos a ver nuestro proyecto de industrialización, donde explicamos con mas detalles nuestro objetivo principal de esta inversión.</p>
+            <h2>{{vision.title}}</h2>
+            <h4>{{vision.subtitle}}</h4>
+            <p>"{{vision.desc}}"</p>
+            <p>{{vision.info}}</p>
             <a class="btn btn-primary" routerLink="/proyecto-industrial" routerLinkActive="active">Ver proyecto</a>
         </div>
     </div>
-    <!-- /.row -->
+    <!-- /.Vision -->
 
     <!-- Mision -->
     <div class="row">
-        <div class="panel panel-default">
+        <div class="panel panel-default" *ngFor="let mision of mision">
             <div class="panel-heading">
-                <h3>Misión</h3>
+                <h2>{{mision.title}}</h2>
             </div>
             <div class="panel-body">
-                <p style="font-family: 'OpenSansItalic'; font-size: 18px;">"Aportar valor al desarrollo social y económico, generando bienestar y crecimiento a nuestro país."</p>
+                <blockquote class="blockquote">
+                    <h3 class="mb-0">"{{mision.desc}}"</h3>
+                </blockquote>
             </div>
         </div>
     </div>
+    <!-- /.Mision -->
 
     <!-- Valores -->
     <div class="row">
         <div class="panel panel-default">
-            <div class="panel-heading">
-                <h3>Valores</h3>
-            </div>
+            <div class="panel-heading"><h2>Valores</h2></div>
             <div class="panel-body">
-                <h4>Trabajo en equipo</h4>
-                <p>Nos permite llevar a cabo los objetivos trazados por la organización con la mejor energía posible, donde el capital humano se integra para consolidar el compañerismo, solidaridad y comunicación asertiva, el cual nos permite actuar como uno solo.</p>
-                <br/>
-                <h4>Respeto</h4>
-                <p>Al obedecer las reglas y normas de la organización, nos permite convivir de manera armoniosa para llegar al éxito de manera eficiente. El respeto nos une, fortalece y nos vuelven mas tolerantes con nuestros compañeros.</p>
-                <br/>
-                <h4>Responsabilidad</h4>
-                <p>Como empresa sentimos que es nuestra labor aportar valor a nuestro entorno social, promoviendo la educación, alimentación sana, hábitos saludables, cuidado del medio ambiente y seguridad.</p>
-                
+                <div *ngFor="let valor of valores" class="col-xs col-sm-4 col-md-4 col-lg-4">
+                    <h4>{{ valor.name }}</h4>
+                    <p>{{ valor.desc }}</p>
+                </div>
             </div>
         </div>
     </div>
-    <!-- /.row -->
+    <!-- /.valores -->
+
 </div>
