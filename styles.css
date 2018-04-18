@@ -1,34 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
 
 /* Global Styles */
-@font-face {
-    font-family: 'OpenSansRegular';
-    src: url('assets/fonts/OpenSans-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-
-}
-@font-face {
-    font-family: 'OpenSansBold';
-    src: url('assets/fonts/OpenSans-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'OpenSansItalic';
-    src: url('assets/fonts/OpenSans-Italic.ttf') format('truetype');
-    font-weight: normal;
-    font-style: italic;
-}
+@@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
 
 html,
 body {
-    font-family: 'OpenSansRegular';
+    font-family: 'Open Sans', sans-serif;
     height: 100%;
 }
 
 h1,h2,h3,h4,h5{
-    font-family: 'OpenSansBold';
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
 }
 a{
     color: #F5D328;
