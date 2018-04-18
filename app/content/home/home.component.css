@@ -1,0 +1,21 @@
+.image{
+    height: 20em;
+    width: auto;
+    background-size: cover;
+    background-image: url('/assets/images/banner1.jpg');
+    background-position: 50% 50%;
+}
+.home-content{
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.250);
+}
+
+/* Responsive Styles */
+@media(max-width:767px) {
+    .img-portfolio {
+        margin-bottom: 15px;
+    }
+
+    header.carousel .carousel {
+        height: 70%;
+    }
+}

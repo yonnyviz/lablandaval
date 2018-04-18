@@ -1,0 +1,80 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Global Styles */
+@font-face {
+    font-family: 'OpenSansRegular';
+    src: url('assets/fonts/OpenSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'OpenSansBold';
+    src: url('assets/fonts/OpenSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'OpenSansItalic';
+    src: url('assets/fonts/OpenSans-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+html,
+body {
+    font-family: 'OpenSansRegular';
+    height: 100%;
+}
+
+h1,h2,h3,h4,h5{
+    font-family: 'OpenSansBold';
+}
+a{
+    color: #F5D328;
+}
+
+.img-portfolio {
+    margin-bottom: 30px;
+}
+.img-hover:hover {
+    opacity: 0.8;
+}
+
+.panel {
+    -webkit-box-shadow: 0 0px 0px rgba(0,0,0,0);
+    box-shadow: 0 0px 0px rgba(0,0,0,0);
+}
+.panel-default{
+    border: none;
+}
+.panel-default .panel-heading{
+    background-color: white;
+}
+.panel-default .panel-heading i{
+    color: black;
+}
+.panel-default .panel-heading h4{
+    color:black;
+}
+
+/* 404 Page Styles */
+
+.error-404 {
+    font-size: 100px;
+}
+
+/* Responsive Styles */
+
+@media(max-width:991px) {
+    .customer-img,
+    .img-related {
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width:767px) {
+    .img-portfolio {
+        margin-bottom: 15px;
+    }
+}

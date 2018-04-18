@@ -1,0 +1,31 @@
+.logo{
+    height: 50px;
+    padding: 2px 5px;
+}
+
+.navbar-default{
+    background-color: white;
+    margin-bottom: 0px;
+    border-radius: 0%;
+    padding: 10px 0;
+    border: none;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.250);
+}
+
+.navbar-collapse{
+    border-color: white;
+}
+
+.dropdown-menu{
+    background-color: #F5D328;
+    border-radius: 0px;
+    border: none;
+}
+
+nav .dropdown-menu a {
+    color: black;
+}
+
+.navbar-default li a{
+    font-family: 'OpenSansBold';
+}
