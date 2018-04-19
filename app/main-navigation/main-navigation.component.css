@@ -9,7 +9,7 @@
     border-radius: 0%;
     padding: 10px 0;
     border: none;
-    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.250);
+    box-shadow: 0 0px 5px rgba(0, 0, 0, 0.250);
 }
 
 .navbar-collapse{
